@@ -1,0 +1,133 @@
+* {
+   box-sizing: border-box;
+}
+
+.page__container {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   height: auto;
+   margin: 50px;
+}
+
+.search__field__container {
+   display: inline-block;
+   height: 100px;
+   width: 100%;
+   border-style: solid;
+   border-color: #000;
+   border-width: 1px;
+   border-bottom-width: 0px;
+}
+
+.result__field {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   height: auto;
+   width: 100%;
+   border-style: solid;
+   border-color: #000;
+   border-width: 1px;
+}
+
+label {
+   margin-top: 35px;
+   margin-left: 30%;
+}
+
+h4 {
+   margin-top: 20px;
+   margin-left: 30%;
+}
+
+.student {
+   width: 40%;
+   padding-bottom: 20px;
+}
+
+.course {
+   width: 60%;
+   border-style: solid;
+   border-color: #000;
+   border-width: 0px;
+   border-left-width: 1px;
+   padding-bottom: 20px;
+}
+
+.search__bar {
+   margin-top: 35px;
+   margin-left: 10px;
+   width: 200px;
+   height: 30px;
+   border-color: #ddd;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.search__bar:focus {
+   border-color: #000;
+}
+
+.search__button {
+   margin-top: 35px;
+   margin-left: 30px;
+   text-align: center;
+   width: 80px;
+   height: 30px;
+   background-color: white;
+   cursor: pointer;
+   border-color: #000;
+   border-width: 1px;
+}
+
+table {
+   border-collapse: collapse;
+   margin-top: 10px;
+   margin-left: 50px;
+}
+
+table, th, td {
+   border: 1px solid black;
+   width: 300px;
+}
+
+th, td {
+   height: 10px;
+}
+
+li {
+   list-style-type: none;
+   font-size: 14px;
+   width: 80%;
+   text-align: left;
+   cursor: pointer;
+   padding: 3px;
+}
+
+li:hover {
+   background-color: #ddd;   
+}
+@media all and (max-width: 768px) {
+   label {
+      margin: 10px;
+   }
+
+   h4 {
+      margin: 10px;
+   }
+
+   table {
+      border-collapse: collapse;
+      margin: 10px;
+   }
+
+   table, th, td {
+      border: 1px solid black;
+      width:auto;
+   }
+
+   .search__bar {
+      width: 100px;
+   }
+}

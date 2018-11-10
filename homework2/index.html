@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>homework2</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src='javascripts/globalVars.js'></script>
+    <script src='javascripts/model/Student.js'></script>
+    <script src='javascripts/model/Course.js'></script>
+    <script src='javascripts/view/ListView.js'></script>
+    <script src='javascripts/view/TableView.js'></script>
+    <script src='javascripts/control/StudentPageControl.js'></script>
+    <script src="javascripts/control/GradePageControl.js"></script>
+</head>
+<body>
+    <div class="page__container">
+        <div class="search__field__container">
+            <label>Last Name: </label>
+            <input class="search__bar" id="ln_id" name="ln_id" type="text">
+            <input class="search__button" id="search_student" type="submit" value='Search'>
+        </div>
+        <div class="result__field">
+            <div class="student">
+                <h4>Students Found: </h4>
+                <ul id='student_list_id'></ul>
+            </div>
+            <div class="course">
+                <h4 id="grade_report"></h4>
+                <table id="grade_table_id">
+                    
+                       
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <br />
+    <p>all student list:</p>
+    <strong>*In order to test this program easily, I list all the students here with 'first name' + 'last name'</strong>
+    <div>
+        John Smith<br>
+        Amy Smith<br>
+        George Klos<br>
+        Jerry Tran<br>
+        Peter Pan<br>
+        Huy Tran<br>
+        Stephanie Klos
+    </div>
+
+</body>
+<script>
+    // Create default data (an array of Student objects)
+    var student_list = new Array();
+    student_list.push(new test.model.Student('John', 'Smith',
+        [new test.model.Course('ART', 'A'), new test.model.Course('MUSIC', 'A')]));
+    student_list.push(new test.model.Student('Amy', 'Smith',
+        [new test.model.Course('PHYSICS', 'A-'), new test.model.Course('MATH', 'B')]));
+    student_list.push(new test.model.Student('George', 'Klos',
+        [new test.model.Course('PHYSICS', 'B-'), new test.model.Course('CHEMISTRY', 'B+')]));
+    student_list.push(new test.model.Student('Jerry', 'Tran',
+        [new test.model.Course('PHYSICS', 'B-'), new test.model.Course('CHEMISTRY', 'B+'), new test.model.Course('COMPUTER', 'A-')]));
+    student_list.push(new test.model.Student('Peter', 'Pan',
+        [new test.model.Course('SPANISH', 'C+'), new test.model.Course('MATH', 'A'), new test.model.Course('ART', 'A-')]));
+    student_list.push(new test.model.Student('Hue', 'Tran',
+        [new test.model.Course('CHEMISTRY', 'B+'), new test.model.Course('MUSIC', 'A'), new test.model.Course('DANCE', 'C')]));
+    student_list.push(new test.model.Student('Stephanie', 'Klos',
+        [new test.model.Course('COMPUTER', 'C+'), new test.model.Course('ENGLISH', 'A'), new test.model.Course('MATH', 'B-'),new test.model.Course('ART', 'B+')]));
+</script>
+</html>
